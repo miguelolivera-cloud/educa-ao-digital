@@ -1,64 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>blog</title>
-     <style>
-      header{
-         background-color: beige;
-         color: #456be7;
-         text-align: center;
-         max-width: 800px;
-         margin: 0 auto;
-         padding: 16px;
-         border: 5px solid ;
-      }
-      main{
-         background-color: aqua;
-         color: rgb(127, 216, 216);
-         max-width: 800px;
-         margin: 0 auto;
-         padding: 16px;
-         display: flex;
-      }
-      img{
-        width: 80px;
-        height: 80px;
-      }
-     .artigo-autor {
-         font-weight: bold;
-      }
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprenda a Dar Grau</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-     </style>
-  </head>
+  <div class="card-grau">
+    <h2>Domine o Grau</h2>
+    <p>O segredo do equilíbrio está no controle do freio traseiro e na postura correta do corpo.</p>
+    <button class="btn-dica">Ver Dicas</button>
+  </div>
 
-  <body>
-     <header>
-     <h1> Meu blog tech </h1>
-     <p> Vou compartilhar conhecimento sobre dar grau de bicicleta</p>
-     </header>
-     <main> 
-      <img src="grau de bike.jpg" alt="Jovem praticando grau de bicicleta em uma rua asfaltada, 
-      empinando a roda dianteira no ar e mantendo o equilíbrio no pneu traseiro.">
-      <div> 
-   <h2> Meu primeiro post</h2>
-   <p class="artigo-autor">Por: Miguel Pichurski</p>
-   <p> Boas-vindas ao meu novo Blog! Aqui voce vai saber e ter conhecimeto sobre dar graus
-      de bicicleta.</p>
-      <button>🚲 <span>0</span></button> 
-      </div>
-
-    </main>
-  </body>
-  <script>
-   const botao = document.querySelector("botton");
-   botao.addEventListener("click", botaoClicado);
-
-   function botaoClicado(){
-      console.log("fui clicado");
-      let texto = botao.querySelector("span")
-      texto.textContent++;
-   }
-  </script>
+</body>
 </html>

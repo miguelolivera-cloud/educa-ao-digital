@@ -1,0 +1,39 @@
+/* Código CSS */
+.card-grau {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 350px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  font-family: 'Segoe UI', sans-serif;
+  border-left: 4px solid #ff4500;
+}
+
+.card-grau h2 {
+  margin-top: 0;
+  color: #ff4500;
+  font-size: 1.5rem;
+}
+
+.card-grau p {
+  line-height: 1.5;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.btn-dica {
+  background-color: #daa694;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-dica:hover {
+  background-color: #ebb19d;
+  transform: translateY(-2px);
+}
