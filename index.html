@@ -3,53 +3,151 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guia do Grau - Domine a Manobra</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Blog de Tecnologia</title>
+  <style>
+    /* Estilos Gerais */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    /* Container dos Artigos */
+    .blog-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* Card do Artigo */
+    .artigo-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      width: 100%;
+      max-width: 420px;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .artigo-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    /* Imagem do Card */
+    .artigo-imagem {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    /* Conteúdo */
+    .artigo-conteudo {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .artigo-titulo {
+      margin: 0 0 8px 0;
+      font-size: 1.4rem;
+      color: #0d47a1;
+    }
+
+    .artigo-autor {
+      font-size: 0.85rem;
+      color: #666;
+      margin: 0 0 12px 0;
+      font-weight: 600;
+    }
+
+    .artigo-texto {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #444;
+      margin: 0 0 20px 0;
+      flex-grow: 1;
+    }
+
+    /* Botões de Reação */
+    .artigo-acoes {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn-reacao {
+      background-color: #eef2f7;
+      border: 1px solid #d0d7de;
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn-reacao:hover {
+      background-color: #e0e7f1;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Cabeçalho Principal -->
-  <header class="header-principal">
-    <div class="logo">Grau<span>Bike</span></div>
-    <nav>
-      <a href="#inicio">Início</a>
-      <a href="#tecnicas">Técnicas</a>
-      <a href="#seguranca">Segurança</a>
-    </nav>
-  </header>
+  <main class="blog-container">
 
-  <!-- Seção Principal de Destaque -->
-  <main class="container-main" id="inicio">
-    <section class="card-grau">
-      <h2>Domine o Grau de Bike</h2>
-      <p>Aprenda as técnicas corretas de controle de freio, ponto de equilíbrio e postura para empinar com segurança e total controle.</p>
-      <button class="btn-dica">Começar Agora</button>
-    </section>
-
-    <!-- Seção de Passos e Dicas -->
-    <section class="secao-dicas" id="tecnicas">
-      <h3>Pilares da Manobra</h3>
-      <div class="grid-dicas">
-        <div class="item-dica">
-          <h4>1. Freio Traseiro</h4>
-          <p>Mantenha sempre o dedo no manete. É o freio que impede você de virar para trás.</p>
-        </div>
-        <div class="item-dica">
-          <h4>2. Postura do Corpo</h4>
-          <p>Jogue o peso do quadril para trás e mantenha os braços esticados ao puxar.</p>
-        </div>
-        <div class="item-dica">
-          <h4>3. Cadência Segura</h4>
-          <p>Use uma marcha leve no início para subir a frente sem aplicar força excessiva.</p>
+    <!-- Artigo 1 -->
+    <article class="artigo-card">
+      <img 
+        src="grau de bike.jpg" 
+        alt="Logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia." 
+        class="artigo-imagem"
+      >
+      <div class="artigo-conteudo">
+        <h2 class="artigo-titulo">Meu primeiro post</h2>
+        <p class="artigo-autor">Por: Marcelo Paludetto</p>
+        <p class="artigo-texto">
+          Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação
+          e curiosidades da área de tecnologia.
+        </p>
+        <div class="artigo-acoes">
+          <button class="btn-reacao">❤️ <span>0</span></button>
+          <button class="btn-reacao">👍 <span>0</span></button>
         </div>
       </div>
-    </section>
+    </article>
+
+    <!-- Artigo 2 -->
+    <article class="artigo-card">
+      <img 
+        src="grau de bike.jpg" 
+        alt= "Ciclista empinando uma bicicleta em uma roda só, mantendo a roda dianteira no ar."
+        class="artigo-imagem"
+      >
+      <div class="artigo-conteudo">
+        <h2 class="artigo-titulo">Meu primeiro post</h2>
+        <p class="artigo-autor">Por: Miguel</p>
+        <p class="artigo-texto">
+          Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas sobre como dar grau de bicicleta 
+        </p>
+        <div class="artigo-acoes">
+          <button class="btn-reacao">❤️ <span>0</span></button>
+          <button class="btn-reacao">👍 <span>0</span></button>
+        </div>
+      </div>
+    </article>
+
   </main>
 
-  <!-- Rodapé do Site -->
-  <footer class="rodape">
-    <p>&copy; 2026 Guia do Grau. Pratique sempre em locais seguros e use capacete.</p>
-  </footer>
-
 </body>
-</html>
+</html> 
