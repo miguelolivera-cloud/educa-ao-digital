@@ -1,428 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>projeto Maria</title>
-  <style>
-   /* Estilos Globais e Reset */
-   * {
-     box-sizing: border-box;
-     margin: 0;
-     padding: 0;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Mundo da Bike - Miguel Pichurski</title>
 
-   body {
-     background-color: #fdf6f9;
-     color: #333333;
-     line-height: 1.6;
-     padding-bottom: 3rem;
-   }
-
-
-   /* Cabeçalho */
-   header {
-     background: linear-gradient(135deg, #8e24aa, #ab47bc);
-     color: #ffffff;
-     text-align: center;
-     padding: 2.5rem 1rem;
-     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-   }
-
-
-   header h1 {
-     font-size: 2.2rem;
-     margin-bottom: 0.5rem;
-   }
-
-
-   header p {
-     font-size: 1.1rem;
-     opacity: 0.9;
-   }
-
-
-   /* Container Principal */
-   main {
-     max-width: 800px;
-     margin: 2rem auto;
-     padding: 0 1.5rem;
-   }
-
-
-   /* Card do Post */
-   .post-card {
-     background-color: #ffffff;
-     border-radius: 12px;
-     padding: 2rem;
-     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-     margin-bottom: 2rem;
-   }
-
-
-   .post-card h2 {
-     color: #6a1b9a;
-     font-size: 1.8rem;
-     margin-bottom: 0.5rem;
-     border-bottom: 2px solid #f3e5f5;
-     padding-bottom: 0.5rem;
-   }
-
-
-   .post-meta {
-     font-size: 0.9rem;
-     color: #777;
-     margin-bottom: 1.5rem;
-   }
-
-
-   .post-card h3 {
-     color: #8e24aa;
-     margin-top: 1.5rem;
-     margin-bottom: 0.5rem;
-   }
-
-
-   .post-card p {
-     margin-bottom: 1rem;
-     text-align: justify;
-   }
-
-
-   /* Listas */
-   .post-card ul {
-     margin-left: 1.5rem;
-     margin-bottom: 1rem;
-   }
-
-
-   .post-card li {
-     margin-bottom: 0.3rem;
-   }
-
-
-   /* Alerta / Caixa de Destaque */
-   .alert-box {
-     background-color: #fff3e0;
-     border-left: 5px solid #ff9800;
-     padding: 1rem;
-     border-radius: 6px;
-     margin-top: 1.5rem;
-   }
-
-
-   .alert-box h4 {
-     color: #e65100;
-     margin-bottom: 0.3rem;
-   }
-
-
-   /* Reações e Interações */
-   .post-reactions {
-     margin-top: 1.5rem;
-     padding-top: 1rem;
-     border-top: 1px solid #eee;
-     display: flex;
-     gap: 1.5rem;
-     font-size: 1rem;
-     color: #555;
-   }
-
-
-   .reaction-item {
-     display: flex;
-     align-items: center;
-     gap: 0.4rem;
-     cursor: pointer;
-   }
-
-
-   /* Rodapé */
-   footer {
-     text-align: center;
-     color: #777;
-     font-size: 0.9rem;
-     margin-top: 2rem;
-   }
- </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+    <header>
+        <h1>🚴‍♂️ Mundo da Bike</h1>
+        <p>Conhecimento, diversão e paixão por bicicletas</p>
+    </header>
 
- <header>
-   <h1>Meu Blog Tech</h1>
-   <p>Vou compartilhar conhecimento sobre tecnologia e programação</p>
- </header>
+    <main>
 
+        <article class="post-card">
 
- <main>
-   <article class="post-card">
-     <h2>O Fascínio dos Lírios: História, Simbolismo e Cuidados</h2>
-     <p class="post-meta">Por <strong>Maria Eduarda</strong> • Publicado recentemente</p>
+            <h2>🚴‍♂️ Conhecendo o Mundo das Bicicletas</h2>
 
+            <p class="post-meta">
+                Por <strong>Miguel Pichurski</strong> • Publicado recentemente
+            </p>
 
-     <p>
-       O lírio (<em>Lilium</em>) é uma das flores mais fascinantes e antigas da história da humanidade. Nativo das regiões temperadas do Hemisfério Norte, como Ásia e Europa, ele pertence à família Liliaceae e se desenvolve a partir de bulbos subterrâneos. Ao longo dos séculos, essa planta conquistou o mundo não apenas pela sua beleza exuberante e pétalas marcantes em formato de trombeta, mas também pelo seu perfume adocicado e marcante, muito utilizado na indústria de fragrâncias.
-     </p>
+            <!-- Imagem principal -->
+            <img
+                src="grau de bike.jpg"
+                alt="Bicicleta"
+                class="bike-image"
+            >
 
+            <p>
+                A bicicleta é um dos meios de transporte mais populares do mundo.
+                Além de ser uma forma divertida de se locomover, ela também é
+                utilizada em esportes, passeios e diferentes modalidades de ciclismo.
+            </p>
 
-     <h3>Simbolismo e Significados das Cores</h3>
-     <p>
-       Historicamente, a variedade branca está associada à pureza, à inocência e à espiritualidade, sendo uma figura constante em pinturas renascentistas e celebrações religiosas. Com o desenvolvimento de milhares de híbridos, a flor ganhou novas cores e significados:
-     </p>
-     <ul>
-       <li><strong>Branco:</strong> Paz, pureza e inocência.</li>
-       <li><strong>Amarelo:</strong> Alegria, gratidão e amizade.</li>
-       <li><strong>Rosa e Vermelho:</strong> Romance, paixão e admiração.</li>
-     </ul>
+            <h3>🚲 Tipos de Bicicleta</h3>
 
+            <p>
+                Existem vários tipos de bicicletas, cada uma desenvolvida para
+                diferentes terrenos e atividades.
+            </p>
 
-     <h3>Dicas para Cultivo e Cuidados</h3>
-     <p>
-       O cultivo do lírio exige atenção a detalhes específicos para que a planta floresça de forma saudável:
-     </p>
-     <ul>
-       <li><strong>Iluminação:</strong> Necessita de um local bem iluminado, preferindo o sol da manhã e sombra parcial nas horas mais quentes do dia.</li>
-       <li><strong>Solo:</strong> Deve ser rico em nutrientes e apresentar excelente drenagem, pois o acúmulo de água apodrece o bulbo facilmente.</li>
-       <li><strong>Rega:</strong> Regas moderadas, mantendo a terra apenas úmida.</li>
-     </ul>
+            <ul>
+                <li>
+                    <strong>Mountain Bike:</strong>
+                    indicada para trilhas e terrenos irregulares.
+                </li>
 
+                <li>
+                    <strong>Bicicleta urbana:</strong>
+                    ideal para passeios e deslocamentos pela cidade.
+                </li>
 
-     <div class="alert-box">
-       <h4>⚠️ Alerta Importante de Toxicidade</h4>
-       <p>
-         Os lírios são <strong>altamente tóxicos para gatos</strong>. A ingestão de qualquer parte da planta — incluindo o pólen ou as pétalas — pode causar insuficiência renal grave nos felinos. Mantenha longe dos seus bichinhos!
-       </p>
-     </div>
+                <li>
+                    <strong>Bicicleta de estrada:</strong>
+                    desenvolvida para velocidade e longas distâncias.
+                </li>
 
+                <li>
+                    <strong>BMX:</strong>
+                    muito utilizada em manobras e modalidades esportivas.
+                </li>
+            </ul>
 
-     <div class="post-reactions">
-       <span class="reaction-item">🌸 12</span>
-       <span class="reaction-item">💖 8</span>
-     </div>
-   </article>
- </main>
+            <h3>🔥 O que é "dar grau"?</h3>
 
+            <p>
+                "Dar grau" é o nome popular dado a uma manobra em que a bicicleta
+                fica apoiada principalmente na roda traseira. É uma prática bastante
+                conhecida entre ciclistas e faz parte da cultura de algumas modalidades.
+            </p>
 
- <footer>
-   <p>&copy; 2026 Blog Maria - Todos os direitos reservados.</p>
- </footer>
+            <p>
+                A prática exige equilíbrio, controle da bicicleta e atenção.
+                Por envolver risco de queda, é importante priorizar a segurança,
+                utilizar equipamentos de proteção e escolher locais apropriados.
+            </p>
 
+            <div class="alert-box">
+
+                <h4>⚠️ Segurança em primeiro lugar</h4>
+
+                <p>
+                    Sempre utilize equipamentos de proteção, especialmente capacete.
+                    Evite praticar manobras em ruas movimentadas e respeite as regras
+                    de trânsito e as outras pessoas ao redor.
+                </p>
+
+            </div>
+
+            <h3>🛠️ Cuidados com a Bicicleta</h3>
+
+            <ul>
+                <li>
+                    <strong>Pneus:</strong>
+                    verifique se estão bem calibrados.
+                </li>
+
+                <li>
+                    <strong>Freios:</strong>
+                    confira regularmente se estão funcionando corretamente.
+                </li>
+
+                <li>
+                    <strong>Corrente:</strong>
+                    mantenha limpa e lubrificada.
+                </li>
+
+                <li>
+                    <strong>Banco e guidão:</strong>
+                    deixe bem ajustados e firmes.
+                </li>
+            </ul>
+
+            <div class="post-reactions">
+                <span class="reaction-item">👍🏼 12</span>
+                <span class="reaction-item">🚴‍♂️ 8</span>
+            </div>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2026 Mundo da Bike - Miguel Pichurski
+        </p>
+    </footer>
 
 </body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>projeto Maria</title>
-  <style>
-   /* Estilos Globais e Reset */
-   * {
-     box-sizing: border-box;
-     margin: 0;
-     padding: 0;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   }
 
-
-   body {
-     background-color: #fdf6f9;
-     color: #333333;
-     line-height: 1.6;
-     padding-bottom: 3rem;
-   }
-
-
-   /* Cabeçalho */
-   header {
-     background: linear-gradient(135deg, #8e24aa, #ab47bc);
-     color: #ffffff;
-     text-align: center;
-     padding: 2.5rem 1rem;
-     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-   }
-
-
-   header h1 {
-     font-size: 2.2rem;
-     margin-bottom: 0.5rem;
-   }
-
-
-   header p {
-     font-size: 1.1rem;
-     opacity: 0.9;
-   }
-
-
-   /* Container Principal */
-   main {
-     max-width: 800px;
-     margin: 2rem auto;
-     padding: 0 1.5rem;
-   }
-
-
-   /* Card do Post */
-   .post-card {
-     background-color: #ffffff;
-     border-radius: 12px;
-     padding: 2rem;
-     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-     margin-bottom: 2rem;
-   }
-
-
-   .post-card h2 {
-     color: #6a1b9a;
-     font-size: 1.8rem;
-     margin-bottom: 0.5rem;
-     border-bottom: 2px solid #f3e5f5;
-     padding-bottom: 0.5rem;
-   }
-
-
-   .post-meta {
-     font-size: 0.9rem;
-     color: #777;
-     margin-bottom: 1.5rem;
-   }
-
-
-   .post-card h3 {
-     color: #8e24aa;
-     margin-top: 1.5rem;
-     margin-bottom: 0.5rem;
-   }
-
-
-   .post-card p {
-     margin-bottom: 1rem;
-     text-align: justify;
-   }
-
-
-   /* Listas */
-   .post-card ul {
-     margin-left: 1.5rem;
-     margin-bottom: 1rem;
-   }
-
-
-   .post-card li {
-     margin-bottom: 0.3rem;
-   }
-
-
-   /* Alerta / Caixa de Destaque */
-   .alert-box {
-     background-color: #fff3e0;
-     border-left: 5px solid #ff9800;
-     padding: 1rem;
-     border-radius: 6px;
-     margin-top: 1.5rem;
-   }
-
-
-   .alert-box h4 {
-     color: #e65100;
-     margin-bottom: 0.3rem;
-   }
-
-
-   /* Reações e Interações */
-   .post-reactions {
-     margin-top: 1.5rem;
-     padding-top: 1rem;
-     border-top: 1px solid #eee;
-     display: flex;
-     gap: 1.5rem;
-     font-size: 1rem;
-     color: #555;
-   }
-
-
-   .reaction-item {
-     display: flex;
-     align-items: center;
-     gap: 0.4rem;
-     cursor: pointer;
-   }
-
-
-   /* Rodapé */
-   footer {
-     text-align: center;
-     color: #777;
-     font-size: 0.9rem;
-     margin-top: 2rem;
-   }
- </style>
-</head>
-<body>
-
-
- <header>
-   <h1>Meu Blog Tech</h1>
-   <p>Vou compartilhar conhecimento sobre tecnologia e programação</p>
- </header>
-
-
- <main>
-   <article class="post-card">
-     <h2>O Fascínio dos Lírios: História, Simbolismo e Cuidados</h2>
-     <p class="post-meta">Por <strong>Maria Eduarda</strong> • Publicado recentemente</p>
-
-
-     <p>
-       O lírio (<em>Lilium</em>) é uma das flores mais fascinantes e antigas da história da humanidade. Nativo das regiões temperadas do Hemisfério Norte, como Ásia e Europa, ele pertence à família Liliaceae e se desenvolve a partir de bulbos subterrâneos. Ao longo dos séculos, essa planta conquistou o mundo não apenas pela sua beleza exuberante e pétalas marcantes em formato de trombeta, mas também pelo seu perfume adocicado e marcante, muito utilizado na indústria de fragrâncias.
-     </p>
-
-
-     <h3>Simbolismo e Significados das Cores</h3>
-     <p>
-       Historicamente, a variedade branca está associada à pureza, à inocência e à espiritualidade, sendo uma figura constante em pinturas renascentistas e celebrações religiosas. Com o desenvolvimento de milhares de híbridos, a flor ganhou novas cores e significados:
-     </p>
-     <ul>
-       <li><strong>Branco:</strong> Paz, pureza e inocência.</li>
-       <li><strong>Amarelo:</strong> Alegria, gratidão e amizade.</li>
-       <li><strong>Rosa e Vermelho:</strong> Romance, paixão e admiração.</li>
-     </ul>
-
-
-     <h3>Dicas para Cultivo e Cuidados</h3>
-     <p>
-       O cultivo do lírio exige atenção a detalhes específicos para que a planta floresça de forma saudável:
-     </p>
-     <ul>
-       <li><strong>Iluminação:</strong> Necessita de um local bem iluminado, preferindo o sol da manhã e sombra parcial nas horas mais quentes do dia.</li>
-       <li><strong>Solo:</strong> Deve ser rico em nutrientes e apresentar excelente drenagem, pois o acúmulo de água apodrece o bulbo facilmente.</li>
-       <li><strong>Rega:</strong> Regas moderadas, mantendo a terra apenas úmida.</li>
-     </ul>
-
-
-     <div class="alert-box">
-       <h4>⚠️ Alerta Importante de Toxicidade</h4>
-       <p>a bicicleta pode ser divertido, mas exige bastante cuidado e responsabilidade. O maior risco envolvido são as quedas para trás, que podem causar fraturas sérias e traumas graves na cabeça e na coluna, além do perigo de acidentes ao praticar em vias públicas.</p>
-     </div>
-
-
-     <div class="post-reactions">
-       <span class="reaction-item">👍 12</span>
-       <span class="reaction-item">🚲8</span>
-     </div>
-   </article>
- </main>
-
-
- <footer>
-   <p>&copy; 2026 Blog Miguel - Todos os direitos reservados.</p>
- </footer>
-
-
-</body>
 </html>

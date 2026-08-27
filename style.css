@@ -1,197 +1,206 @@
-/* Configurações Globais e Reset */
-* {
- box-sizing: border-box;
- margin: 0;
- padding: 0;
+/* ==========================================
+   CONFIGURAÇÕES GERAIS E VARIÁVEIS
+   ========================================== */
+:root {
+  --primary-color: #e65100;    /* Laranja vibrante (tema ciclismo) */
+  --primary-hover: #ef6c00;
+  --bg-color: #f4f6f8;         /* Fundo levemente acinzentado */
+  --card-bg: #ffffff;
+  --text-color: #2c3e50;
+  --text-muted: #7f8c8d;
+  --alert-bg: #fff3cd;
+  --alert-border: #ffebaaca;
+  --alert-text: #856404;
+  --radius: 12px;
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
- background-color: #fce4ec; /* Um tom de rosa bem suave para o fundo da página */
- font-family: Georgia, 'Times New Roman', Times, serif;
- color: #333333; /* Texto num tom escuro para leitura confortável */
- line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-
-/* Cabeçalho */
+/* ==========================================
+   CABEÇALHO (HEADER)
+   ========================================== */
 header {
- background-color: #6a1b9a; /* Roxo escuro para bom contraste */
- color: #ffffff; /* Texto branco no cabeçalho */
- text-align: center;
- padding: 2.5rem 1rem;
- box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, var(--primary-color), #bf360c);
+  color: #ffffff;
+  text-align: center;
+  padding: 2.5rem 1rem;
 }
-
 
 header h1 {
- font-size: 2.2rem;
- margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
-
 
 header p {
- font-size: 1.1rem;
- color: #e1bee7;
+  font-size: 1.1rem;
+  opacity: 0.9;
 }
 
-
-/* Container dos Artigos */
+/* ==========================================
+   CONTEÚDO PRINCIPAL (MAIN & ARTICLE)
+   ========================================== */
 main {
- max-width: 800px;
- margin: 2rem auto;
- padding: 0 1rem;
+  flex: 1;
+  max-width: 800px;
+  width: 90%;
+  margin: -20px auto 2rem; /* Sobe um pouco para sobrepor o cabeçalho suavemente */
+  padding: 0 10px;
 }
 
-
-/* Estilo do Card do Post */
 .post-card {
- background-color: #ffffff;
- border-radius: 12px;
- padding: 2rem;
- margin-bottom: 2rem;
- box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background-color: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow);
 }
-
 
 .post-card h2 {
- color: #8e24aa;
- margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
 }
-
 
 .post-meta {
- color: #777777;
- font-size: 0.9rem;
- margin-bottom: 1.2rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
 }
 
-
-p {
- font-size: 15px; /* Aumentado para melhorar a leitura */
- color: #444444;
- margin-bottom: 1rem;
+/* Imagem Principal */
+.bike-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin: 1rem 0 1.5rem;
+  background-color: #e0e0e0; /* Fundo enquanto o link da imagem não carrega */
 }
 
+/* Títulos das Seções */
+.post-card h3 {
+  font-size: 1.3rem;
+  margin: 1.8rem 0 0.8rem;
+  color: #1a252f;
+  border-bottom: 2px solid var(--bg-color);
+  padding-bottom: 0.3rem;
+}
 
-/* Caixas de Alerta e Destaques */
+.post-card p {
+  margin-bottom: 1rem;
+}
+
+/* Listas */
+.post-card ul {
+  list-style-type: none;
+  margin-bottom: 1.5rem;
+}
+
+.post-card li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.post-card li::before {
+  content: "•";
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.4rem;
+  position: absolute;
+  left: 0.3rem;
+  top: -0.2rem;
+}
+
+/* ==========================================
+   CAIXA DE ALERTA (ALERTA DE SEGURANÇA)
+   ========================================== */
 .alert-box {
- background-color: #fff3e0;
- border-left: 5px solid #ff9800;
- padding: 1rem;
- border-radius: 6px;
- margin-top: 1.5rem;
+  background-color: var(--alert-bg);
+  border-left: 5px solid #ffc107;
+  color: var(--alert-text);
+  padding: 1.2rem;
+  border-radius: 6px;
+  margin: 1.5rem 0;
 }
-
 
 .alert-box h4 {
- color: #e65100;
- margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
+.alert-box p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
 
+/* ==========================================
+   REAÇÕES
+   ========================================== */
 .post-reactions {
- display: flex;
- gap: 1rem;
- margin-top: 1rem;
- color: #666;
-}
-/* Configurações Globais e Reset */
-* {
- box-sizing: border-box;
- margin: 0;
- padding: 0;
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
 }
 
-
-body {
- background-color: #fce4ec; /* Um tom de rosa bem suave para o fundo da página */
- font-family: Georgia, 'Times New Roman', Times, serif;
- color: #333333; /* Texto num tom escuro para leitura confortável */
- line-height: 1.6;
+.reaction-item {
+  background-color: var(--bg-color);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-
-/* Cabeçalho */
-header {
- background-color: #6a1b9a; /* Roxo escuro para bom contraste */
- color: #ffffff; /* Texto branco no cabeçalho */
- text-align: center;
- padding: 2.5rem 1rem;
- box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.reaction-item:hover {
+  background-color: #e2e8f0;
 }
 
-
-header h1 {
- font-size: 2.2rem;
- margin-bottom: 0.5rem;
+/* ==========================================
+   RODAPÉ (FOOTER)
+   ========================================== */
+footer {
+  background-color: #1a252f;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
 }
 
+/* ==========================================
+   RESPONSIVIDADE (MOBILE)
+   ========================================== */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
 
-header p {
- font-size: 1.1rem;
- color: #e1bee7;
+  .post-card {
+    padding: 1.2rem;
+  }
+
+  .post-card h2 {
+    font-size: 1.4rem;
+  }
 }
-
-
-/* Container dos Artigos */
-main {
- max-width: 800px;
- margin: 2rem auto;
- padding: 0 1rem;
-}
-
-
-/* Estilo do Card do Post */
-.post-card {
- background-color: #ffffff;
- border-radius: 12px;
- padding: 2rem;
- margin-bottom: 2rem;
- box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-
-.post-card h2 {
- color: #8e24aa;
- margin-bottom: 0.5rem;
-}
-
-
-.post-meta {
- color: #777777;
- font-size: 0.9rem;
- margin-bottom: 1.2rem;
-}
-
-
-p {
- font-size: 15px; /* Aumentado para melhorar a leitura */
- color: #444444;
- margin-bottom: 1rem;
-}
-
-
-/* Caixas de Alerta e Destaques */
-.alert-box {
- background-color: #fff3e0;
- border-left: 5px solid #ff9800;
- padding: 1rem;
- border-radius: 6px;
- margin-top: 1.5rem;
-}
-
-
-.alert-box h4 {
- color: #e65100;
- margin-bottom: 0.3rem;
-}
-
-
-.post-reactions {
- display: flex;
- gap: 1rem;
- margin-top: 1rem;
- color: #666;
-}
-
